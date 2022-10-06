@@ -29,7 +29,9 @@ import edu.umd.cs.findbugs.annotations.CheckForNull;
 import hudson.DescriptorExtensionList;
 import hudson.model.Descriptor;
 import jenkins.model.Jenkins;
+import org.jenkinsci.Symbol;
 
+@Symbol("healthMetrics")
 public abstract class FolderHealthMetricDescriptor extends Descriptor<FolderHealthMetric> {
     /**
      * Returns true if this {@link FolderHealthMetric} type is applicable to the

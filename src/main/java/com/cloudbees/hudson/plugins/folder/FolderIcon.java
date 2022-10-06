@@ -34,6 +34,7 @@ import org.apache.commons.lang.StringUtils;
 import org.jenkins.ui.icon.Icon;
 import org.jenkins.ui.icon.IconSet;
 import org.jenkins.ui.icon.IconSpec;
+import org.jenkinsci.Symbol;
 import org.kohsuke.stapler.Stapler;
 
 /**
@@ -43,6 +44,7 @@ import org.kohsuke.stapler.Stapler;
  * Possible subtypes can range from dumb icons that always render the same thing to smarter icons
  * that change its icon based on the properties/contents of the folder. 
  */
+@Symbol("icon")
 public abstract class FolderIcon extends AbstractStatusIcon implements Describable<FolderIcon>, ExtensionPoint,
         IconSpec {
     /**

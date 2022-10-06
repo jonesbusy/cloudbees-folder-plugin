@@ -28,6 +28,7 @@ import com.cloudbees.hudson.plugins.folder.Folder;
 import hudson.Extension;
 import hudson.model.HealthReport;
 import hudson.model.Item;
+import org.jenkinsci.Symbol;
 import org.kohsuke.stapler.DataBoundConstructor;
 
 import java.util.Collections;
@@ -62,6 +63,7 @@ public class WorstChildHealthMetric extends FolderHealthMetric {
     }
 
     @Extension(ordinal=400)
+    @Symbol("worstChildHealthMetric")
     public static class DescriptorImpl extends FolderHealthMetricDescriptor {
 
         @Override
